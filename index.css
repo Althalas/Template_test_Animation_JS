@@ -1,0 +1,65 @@
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100px;
+    transition: all 0.5s linear;
+}
+
+.btn-success:hover {
+    background-color: orange;
+    border-color: red;
+    width: 200px;
+}
+
+img {
+    transition: transform 1s ease-in, box-shadow 0.2s linear;
+    cursor: pointer;
+}
+
+img:hover {
+    box-shadow: 0 0 10px brown;
+    transform: rotate(180deg);
+}
+
+@keyframes example {
+    0% {
+        background-color: #28a745;
+        left: 0%;
+        top: 0%;
+    }
+
+    25% {
+        background-color: aqua;
+        left: 30%;
+        top: 0%;
+    }
+
+    50% {
+        background-color: bisque;
+        left: 200px;
+        top: 0%;
+    }
+
+    75% {
+        background-color: blueviolet;
+        left: 200px;
+        top: 0%;
+    }
+
+    100% {
+        background-color: black;
+        left: 200px;
+        top: 0%;
+    }
+}
+
+#carre {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
